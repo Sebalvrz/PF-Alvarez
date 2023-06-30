@@ -1,0 +1,502 @@
+/* navbar media queries */
+
+@media (min-width: 768px) {
+    li {
+        display: inline-flex;      
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+/* home/about media queries */
+
+@media (max-width: 1200px) {
+    #about {
+        padding-bottom: 4.27vh;
+    }
+    .about-main .about {
+        font-size: 2.99vh;
+        padding-bottom: 2.13vh;
+    }
+    .about-main .descripción {
+        font-size: 1.17vh;
+        padding-bottom: 2.13vh;
+        margin-bottom: 0;
+    }
+    .bmw-portada {
+        margin-bottom: 2.13vh;
+    }   
+}
+
+@media (max-width: 992px) {
+    #home {
+        padding-bottom: 6.40vh;
+    }
+    #about {
+        padding-bottom: 0;
+    }
+    .about-main .about {
+        font-size: 2.67vh;
+        padding-bottom: 4.80vh;
+    }
+    .about-main .descripción {
+        font-size: 0.85vh;
+        padding-bottom: 4.27vh;
+    }
+    .about-main .bmw-portada {
+        margin-bottom: 4.27vh;
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        padding-bottom: 4.27vh;
+    }
+    #about {
+        padding-bottom: 0;
+    }
+    .about-main .about {
+        font-size: 1.60vh;
+        padding-right: 2.13vh;
+        padding-bottom: 4.27vh;
+    }
+    .about-main .descripción {
+        font-size: 0.53vh;
+        padding-bottom: 3.20vh;
+    }
+    .about-main .bmw-portada {
+        margin-bottom: 2.13vh;
+    }
+}
+
+@media (max-width: 576px) {
+    #home {
+        padding-bottom: 3.20vh;
+    }
+    #about {
+        padding-bottom: 3.20vh;
+    }  
+    .about-main .about {
+        font-size: 1.40vh;
+        padding-right: 2.67vh;
+        padding-bottom: 2.67vh;
+    }
+    .about-main .descripción {
+        font-size: 0.32vh;
+        padding-right: 1.07vh;
+        padding-bottom: 1.07vh;
+    }
+    .about-main .bmw-portada {
+        margin-bottom: 0;
+    }
+}
+
+/* works + events media queries */
+
+@media (max-width: 1200px) {
+    #works {
+        height: 100%;
+    }
+    h2 {
+        font-size: 12px;
+        padding-bottom: 0;   
+    }
+    .section-cards {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-top: 0;  
+    }
+    .card-container {
+        flex-direction: column;
+    } 
+    .card-nameby {
+        margin-bottom: 30px;
+    }  
+}          
+
+@media (max-width: 768px) {
+    #works {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    h2 {
+        padding-bottom: 0;
+    }
+    .a-btn {
+        margin-bottom: 70px;
+    }
+    .portadas {
+        height: 375px;
+        width: 217.5px;
+    }
+    .view-gallery {
+        font-size: 9px;
+        padding: 9px 24px 9px 24px;
+    }
+    .more-info {
+        font-size: 9px;
+        padding: 9px 24px 9px 24px;
+    }
+    .card-photo {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+    .card-nameby {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    #works {
+        padding-bottom: 0;
+    }
+    h2 {
+        padding-bottom: 0;
+    }
+    .section-cards {
+        padding-top: 0;
+    }
+    .view-gallery {
+            font-size: 9px;
+            padding: 7.2px 19.2px 7.2px 19.2px;
+        }
+    .more-info {
+        font-size: 9px;
+        padding: 7.2px 19.2px 7.2px 19.2px;
+    }    
+}
+
+/* contacto media queries */
+
+@media (max-width: 1200px) {
+    .contact-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-main {
+        margin-top: 50px;
+    }
+    .r5 {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-main h3 {
+        font-size: 30px;
+    }
+    .col-main p {
+        font-size: 14px;
+    }
+    .col-main a {
+        font-size: 8px;
+    }
+    .r5 {
+        width: 450px;
+        margin-top: 80px;
+    }
+    .col-main {
+        margin-top: 30px;
+    }
+    .contacto {
+        padding: 9px 30px 9px 30px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-main h3 {
+        font-size: 20px;
+    }
+    .col-main p {
+        font-size: 10.5px;
+        margin: 0px;
+    }
+    .col-main a {
+        font-size: 6px;
+    }
+    .r5 {
+        width: 300px;
+        margin-top: 50px;
+    }
+    .col-main {
+        margin-top: 10px;
+    }
+    .contacto {
+        padding: 6.75px 22.5px 6.75px 22.5px;
+    }
+    .followus-container {
+        margin-top: 20px;
+    }
+    .lower-registered {
+        padding-top: 0px;
+    }
+}
+
+/* footer media queries */
+
+@media (max-width: 1200px) {
+    .li-redes {
+        padding: 0;
+    }
+    h4 {
+        padding-right: 0;
+    }
+    .footer-logolower {
+        padding: 0;
+    } 
+    .email-address {
+        display: flex;
+        flex-direction: column;
+    }
+    .signup-mail {
+        margin-bottom: 10px;
+    }
+    .menu-footer {
+        display: flex;
+        justify-content: center;
+    }
+    .menu-footer li a {
+        padding: 15px;
+    }   
+}
+
+@media (max-width: 768px) {
+    .li-redes {
+        padding: 0;
+        margin-top: 0;
+    }
+    .li-redes li {  
+        margin: 3px;
+    }
+    .ig {
+        height: 22.5px;
+        width: 22.5px;
+    }
+    .fb {
+        height: 22.5px;
+        width: 13.5px;
+    }
+    .tw {
+        height: 18.75px;
+        width: 22.5px;
+    }
+    h4 {
+        font-size: 10px;
+        padding-right: 0;
+    }
+    .footer-logolower {
+        padding: 0;
+    } 
+    .email-address {
+        display: flex;
+        flex-direction: column;    
+    }
+    .signup-mail {
+        height: 30px;
+        width: 60%;
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+    .btn-signup {
+        height: 30px;
+        width: 20%;
+        font-size: 9px;
+    }
+    .menu-footer {
+        display: flex;
+        justify-content: center;
+    }
+    .menu-footer li a {
+        font-size: 10px;
+        padding: 10px;
+    }
+    .copyright-footer {
+        font-size: 7px;
+    }
+}
+
+/* formulario media queries */
+
+@media (max-width: 768px) {
+    body {
+        padding: 30px;
+    }
+
+    form-body {
+        padding: 50px 30px;
+    }
+
+    input {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 24px;
+    }
+    
+    form-body {
+        padding: 40px 24px;
+    }
+
+    input {
+        padding: 12px;
+    }
+}
+
+/* html fotos media queries */
+
+@media (max-width: 768px) {
+    .back-works {
+        font-size: 9px;
+    }
+    .peugeot {
+        padding-top: 15px;
+    }
+    .mk1 {
+        padding-top: 15px;
+    }
+    .copyright {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .back-works {
+        font-size: 9px;
+        padding: 6.75px 8.44px 6.75px 8.44px;
+    }
+    .peugeot {
+        padding-top: 15px;
+    }
+    .copyright {
+        font-size: 7px;
+    }
+}
+
+/* html events info media queries */ 
+
+@media (max-width: 1200px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .col {
+        margin-top: 10px;
+        } 
+    
+    h1 {
+        font-size: 35px;
+        margin-top: 0px;
+    }
+
+    .date {
+        font-size: 10px;
+    }
+    
+    .day {
+        font-size: 11px;
+    }
+
+    .place {
+        font-size: 12px;
+    }
+
+    .btnback-ac16 {
+        padding: 9px 11.25px 9px 11.25px;
+        font-size: 12px;
+    }
+
+
+    .ac16-photo {
+        margin-top: 30px;
+        width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .col {
+        margin-top: 0;
+        } 
+    
+    h1 {
+        font-size: 35px;
+        margin-top: 0px;
+    }
+
+    .date {
+        font-size: 10px;
+    }
+    
+    .day {
+        font-size: 11px;
+    }
+
+    .place {
+        font-size: 12px;
+    }
+
+    .btnback-ac16 {
+        padding: 9px 11.25px 9px 11.25px;
+        font-size: 10px;
+    }
+
+
+    .ac16-photo {
+        margin-top: 30px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .col {
+        margin-top: 60px;
+        } 
+    
+    h1 {
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .date {
+        font-size: 7px;
+    }
+    
+    .day {
+        font-size: 9px;
+    }
+
+    .place {
+        font-size: 10px;
+    }
+
+    .btnback-ac16 {
+        padding: 6.75px 8.44px 6.75px 8.44px;
+        font-size: 9px;
+    }
+
+    .ac16-photo {
+        margin-top: 0;
+        width: 300px;
+    }
+}

@@ -1,0 +1,126 @@
+.logo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .logo-lower {
+        width: 60px;
+        height: 60px;
+        transition: all 0.6s ease;
+
+        &:hover {
+            transition: all 0.6s ease;
+            transform: rotate(360deg);
+        }
+    }
+
+    a {
+        color: black;
+    }
+}
+
+.header .menu-icon {
+    padding: 15px 10px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.menu .nav-li {
+    padding-right: 3px;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        a {
+        font-size: 13px;
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+
+        &:hover {
+            color: grey;
+            }
+        }
+    }
+
+    & .logo {
+        display: block;
+        padding: 10px 0px 10px 15px;
+    }
+
+    & .menu {
+        background-color: white;
+        clear: both;
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+    }
+
+    & .menu-icon {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+
+        & .nav-icon {
+            background: black;
+            display: block;
+            height: 2px;
+            width: 18px;
+            position: relative;
+            transition: background .2s ease-out;
+
+        &:before {
+            background: black;
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            top: 5px;
+        }
+
+        &:after {
+            background: black;
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: all 0.2s ease-out;
+            top: -5px;
+            }
+        }
+    }
+
+    & .menu-btn {
+        display: none;
+        }
+
+    & .menu-btn:checked ~ .menu {
+        max-height: 240px;
+        }
+
+    & .menu-btn:checked ~ .menu-icon .nav-icon {
+        background-color: transparent;
+        }
+
+    & .menu-btn:checked ~ .menu-icon .nav-icon:before {
+        transform: rotate(-45deg);
+        top: 0;
+        }
+
+    & .menu-btn:checked ~ .menu-icon .nav-icon:after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+}
